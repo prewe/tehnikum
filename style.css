@@ -310,4 +310,125 @@ body {
   text-transform: uppercase;
 }
 
+.price-list {
+  margin-top: 60px;
+}
+.price-list .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-list .container .price__title {
+  font-size: 40px;
+  color: #330066;
+}
+.price-list .container .price__subtitle {
+  color: #cc3399;
+}
+.price-list .container .price__block {
+  margin-top: 30px;
+  width: 100%;
+}
+.price-list .container .price__block .products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-bottom: 4px solid #cc3399;
+  padding-bottom: 15px;
+}
+.price-list .container .price__block .products .product {
+  font-size: 24px;
+  color: #330066;
+  margin: 0 20px;
+}
+.price-list .container .price__block .products .product.active {
+  color: #fff;
+  border: 1px solid #cc3399;
+  background: #cc3399;
+  padding: 5px 10px;
+  margin-top: -5px;
+  border-radius: 20px;
+}
+.price-list .container .price__block .models {
+  width: 100%;
+  position: relative;
+}
+.price-list .container .price__block .models .iphone, .price-list .container .price__block .models .ipad, .price-list .container .price__block .models .macbook, .price-list .container .price__block .models .watch {
+  width: 100%;
+  justify-content: center;
+  font-size: 24px;
+  color: #330066;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: none;
+}
+.price-list .container .price__block .models .iphone.active, .price-list .container .price__block .models .ipad.active, .price-list .container .price__block .models .macbook.active, .price-list .container .price__block .models .watch.active {
+  display: flex;
+}
+.price-list .container .price__block .models .iphone .model, .price-list .container .price__block .models .ipad .model, .price-list .container .price__block .models .macbook .model, .price-list .container .price__block .models .watch .model {
+  padding: 0 20px;
+}
+.price-list .container .price__block .models .iphone .model.active, .price-list .container .price__block .models .ipad .model.active, .price-list .container .price__block .models .macbook .model.active, .price-list .container .price__block .models .watch .model.active {
+  border-bottom: 4px solid #cc3399;
+}
+.price-list .container .price__block .price-lists {
+  margin-top: 100px;
+  position: relative;
+}
+.price-list .container .price__block .price-lists .price-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.price-list .container .price__block .price-lists .price-list__item:not(:last-child) {
+  border-bottom: 2px solid #cc3399;
+}
+.price-list .container .price__block .price-lists .iphone .seven, .price-list .container .price__block .price-lists .iphone .eight, .price-list .container .price__block .price-lists .iphone .ten, .price-list .container .price__block .price-lists .iphone .eleven {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.price-list .container .price__block .price-lists .iphone .seven.active, .price-list .container .price__block .price-lists .iphone .eight.active, .price-list .container .price__block .price-lists .iphone .ten.active, .price-list .container .price__block .price-lists .iphone .eleven.active {
+  display: flex;
+}
+.price-list .container .price__block .price-lists .ipad .pro, .price-list .container .price__block .price-lists .ipad .air {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.price-list .container .price__block .price-lists .ipad .pro.active, .price-list .container .price__block .price-lists .ipad .air.active {
+  display: flex;
+}
+.price-list .container .price__block .price-lists .macbook .pro-retina, .price-list .container .price__block .price-lists .macbook .pro, .price-list .container .price__block .price-lists .macbook .air {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.price-list .container .price__block .price-lists .macbook .pro-retina.active, .price-list .container .price__block .price-lists .macbook .pro.active, .price-list .container .price__block .price-lists .macbook .air.active {
+  display: flex;
+}
+.price-list .container .price__block .price-lists .watch .one, .price-list .container .price__block .price-lists .watch .two, .price-list .container .price__block .price-lists .watch .three, .price-list .container .price__block .price-lists .watch .four {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.price-list .container .price__block .price-lists .watch .one.active, .price-list .container .price__block .price-lists .watch .two.active, .price-list .container .price__block .price-lists .watch .three.active, .price-list .container .price__block .price-lists .watch .four.active {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */
