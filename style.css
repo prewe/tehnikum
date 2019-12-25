@@ -110,7 +110,7 @@ body {
 .main {
   width: 100%;
   height: 847px;
-  background: url("img/bg.png") no-repeat center;
+  background: url("img/bg.jpg") no-repeat center;
 }
 .main .container {
   height: 100%;
@@ -382,6 +382,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  color: #330066;
+  font-size: 20px;
 }
 .price-list .container .price__block .price-lists .price-list__item:not(:last-child) {
   border-bottom: 2px solid #cc3399;
@@ -429,6 +431,296 @@ body {
 }
 .price-list .container .price__block .price-lists .watch .one.active, .price-list .container .price__block .price-lists .watch .two.active, .price-list .container .price__block .price-lists .watch .three.active, .price-list .container .price__block .price-lists .watch .four.active {
   display: flex;
+}
+
+.device-info .container {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+}
+.device-info .container .device-info__text {
+  text-align: center;
+}
+.device-info .container .device-info__text span {
+  color: #cc3399;
+  font-weight: bold;
+}
+
+.reviews {
+  margin-top: 80px;
+}
+.reviews .container {
+  position: relative;
+}
+.reviews .container .reviews__title {
+  font-size: 50px;
+  color: #330066;
+  text-align: center;
+}
+.reviews .container .reviews__content {
+  margin: 30px auto 0 auto;
+  position: relative;
+}
+.reviews .container .reviews__content .review {
+  margin: 10px 15px;
+  width: 460px;
+  height: 360px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+}
+.reviews .container .reviews__content .review .header {
+  display: flex;
+  align-items: center;
+}
+.reviews .container .reviews__content .review .header .review__name {
+  margin-left: 20px;
+  color: #330066;
+  font-weight: bold;
+  font-size: 18px;
+}
+.reviews .container .reviews__content .review .review__text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.reviews .container .prev-arrow {
+  position: absolute;
+  top: calc(50% + 40px);
+  left: -30px;
+}
+.reviews .container .next-arrow {
+  position: absolute;
+  top: calc(50% + 40px);
+  right: -30px;
+  transform: rotate(180deg);
+}
+
+.contacts {
+  margin-top: 50px;
+}
+.contacts .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts .container .contacts__title {
+  font-size: 50px;
+  color: #330066;
+  margin-bottom: 30px;
+}
+.contacts .container .contacts__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.contacts .container .contacts__list .telephone {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  margin-left: -50px;
+}
+.contacts .container .contacts__list .telephone:before {
+  content: url("img/telephone.png");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contacts .container .contacts__list .whats-app {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+.contacts .container .contacts__list .whats-app:before {
+  content: url("img/whatsapp.png");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contacts .container .contacts__list .address {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+.contacts .container .contacts__list .address:before {
+  content: url("img/adress.png");
+  width: 17px;
+  height: 23px;
+  position: absolute;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.map {
+  margin-top: 50px;
+  background: url("img/map.jpg") no-repeat center;
+  width: 100%;
+  height: 491px;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background: #330066;
+  color: #fff;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer .container .footer__info {
+  font-size: 12px;
+}
+.footer .container .socials {
+  display: flex;
+  align-items: center;
+}
+.footer .container .socials a {
+  margin: 0 2px;
+}
+.footer .container .socials .socials__text {
+  margin: 0 0 3px 3px;
+}
+
+@media screen and (max-width: 1400px) {
+  .about-work .container .about-work__stages {
+    flex-wrap: wrap;
+  }
+  .about-work .container .about-work__stages .first {
+    margin-left: -20px !important;
+  }
+  .about-work .container .about-work__stages .stage {
+    margin: 20px 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav-bar > .container {
+    flex-direction: column;
+    height: 230px;
+  }
+  .nav-bar > .container .menu {
+    margin-top: 10px;
+  }
+  .nav-bar > .container .menu .list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-bar > .container .menu .list .list__item {
+    margin: 5px;
+  }
+  .nav-bar > .container .nav-bar__contacts {
+    align-items: center;
+  }
+
+  .main {
+    background: url("img/bg.png") no-repeat center;
+  }
+  .main .container {
+    justify-content: center;
+  }
+  .main .container .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .container .left .title .title__text-border {
+    border: 0;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+  .features .feature {
+    margin-top: 220px;
+  }
+
+  .brands .container .brands__title {
+    text-align: center;
+  }
+  .brands .container .brands__subtitle {
+    text-align: center;
+  }
+
+  .about-work .container .about-work__title {
+    text-align: center;
+  }
+  .about-work .container .about-work__stages {
+    flex-direction: column;
+  }
+
+  .stock .container .left {
+    display: none;
+  }
+  .stock .container .right {
+    margin-left: 0;
+  }
+  .stock .container .right .stock__title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .stock .container .right .stock__subtitle {
+    text-align: center;
+  }
+  .stock .container .right .stock__button {
+    width: 270px;
+    height: 50px;
+  }
+
+  .price-list .container .price__title {
+    text-align: center;
+  }
+  .price-list .container .price__subtitle {
+    text-align: center;
+  }
+  .price-list .container .price__block .products {
+    flex-direction: column;
+  }
+  .price-list .container .price__block .products .product {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .prev-arrow, .next-arrow {
+    display: none;
+  }
+
+  .main {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contacts .container .contacts__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts .container .contacts__list .telephone {
+    margin-left: 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 290px) {
+  .device-info .container {
+    margin-top: 370px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
