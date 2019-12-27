@@ -263,8 +263,23 @@ body {
   align-items: center;
   justify-content: center;
 }
+.about-work .container .about-work__stages .arrow {
+  margin-top: 30px;
+}
 .about-work .container .about-work__stages .stage {
-  margin: 0 10px;
+  margin: 30px 10px 0 70px;
+  position: relative;
+  font-size: 20px;
+}
+.about-work .container .about-work__stages .stage b {
+  color: #330066;
+}
+.about-work .container .about-work__stages .stage:before {
+  content: url("img/stageall.png");
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .stock {
@@ -341,6 +356,7 @@ body {
   font-size: 24px;
   color: #330066;
   margin: 0 20px;
+  cursor: pointer;
 }
 .price-list .container .price__block .products .product.active {
   color: #fff;
@@ -369,6 +385,7 @@ body {
 }
 .price-list .container .price__block .models .iphone .model, .price-list .container .price__block .models .ipad .model, .price-list .container .price__block .models .macbook .model, .price-list .container .price__block .models .watch .model {
   padding: 0 20px;
+  cursor: pointer;
 }
 .price-list .container .price__block .models .iphone .model.active, .price-list .container .price__block .models .ipad .model.active, .price-list .container .price__block .models .macbook .model.active, .price-list .container .price__block .models .watch .model.active {
   border-bottom: 4px solid #cc3399;
@@ -594,12 +611,13 @@ body {
 @media screen and (max-width: 1400px) {
   .about-work .container .about-work__stages {
     flex-wrap: wrap;
+    margin-left: 20px;
   }
-  .about-work .container .about-work__stages .first {
-    margin-left: -20px !important;
+  .about-work .container .about-work__stages .arrow {
+    margin-top: 10px;
   }
   .about-work .container .about-work__stages .stage {
-    margin: 20px 10px;
+    margin: 70px 0 60px 60px;
   }
 }
 @media screen and (max-width: 1200px) {

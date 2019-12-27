@@ -310,8 +310,27 @@ body {
             align-items: center;
             justify-content: center;
 
+            .arrow {
+                margin-top: 30px;
+            }
+
             .stage {
-                margin: 0 10px;
+                margin: 30px 10px 0 70px;
+                position: relative;
+                font-size: 20px;
+
+
+                b {
+                    color: #330066;
+                }
+
+                &:before {
+                    content: url('img/stageall.png');
+                    position: absolute;
+                    left: -50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
         }
     }
@@ -402,6 +421,7 @@ body {
                     font-size: 24px;
                     color: #330066;
                     margin: 0 20px;
+                    cursor: pointer;
 
                     &.active {
                         color: #fff;
@@ -434,6 +454,7 @@ body {
 
                     .model {
                         padding: 0 20px;
+                        cursor: pointer;
 
                         &.active {
                             border-bottom: 4px solid #cc3399;
@@ -713,13 +734,14 @@ body {
         .container {
             .about-work__stages {
                 flex-wrap: wrap;
+                margin-left: 20px;
 
-                .first {
-                    margin-left: -20px !important;
+                .arrow {
+                    margin-top: 10px;
                 }
 
                 .stage {
-                    margin: 20px 10px;
+                    margin: 70px 0 60px 60px;
                 }
             }
         }
